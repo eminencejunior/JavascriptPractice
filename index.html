@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="practice.js"></script>
+    <script>
+    function myFunction() {
+        document.getElementById('displayoutside').innerHTML='Words changed'
+    }
+    </script>
+</head>
+<body>
+    <p id="demo">Javascript content</p>
+    <!--It can  change html content-->
+<button type="button" onclick='document.getElementById("demo").innerHTML="Java is good"'>Click me</button>
+<!--It can turn off/on bulb or switch imahges-->
+<button type="button" onclick='document.getElementById("images").src="./images/pic_bulboff.gif"'>Click to off bulb</button>
+<img src="./images/pic_bulboff.gif" alt="/" id="images">
+<button type="button" onclick='document.getElementById("images").src="./images/pic_bulbon.gif"'>Click to on bulb</button>
+<!--It can change html styles-->
+<p id="style">Javascript is good</p>
+<button type="button" onclick='document.getElementById("style").style.fontSize="35px"'>Click me!</button>
+<!--Hiding of html-->
+<p id="hide">Javascript hides html content</p>
+<button onclick='document.getElementById("hide").style.display="none"'>Clic to hide</button>
+<!--Showing hidden html element-->
+<p id="show" style="display: none;">Damilola is a good boy</p>
+<button type="button" onclick='document.getElementById("show").style.display="block"'>Click to know about Damilola</button>
+<!--Javascript placed in the head tag-->
+<p id="displayoutside">Javascript is super</p>
+<button type="button" onclick='myFunction()'>Click to display</button>
+<!--Javascript in an external file-->
+<p id="external">External file is used</p>
+<button type="button" onclick='myExternal()'>Click to see what is in external file</button>
+</body>
+</html>
